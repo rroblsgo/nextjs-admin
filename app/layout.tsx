@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 
 import Providers from '@/components/providers';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+// import Header from '@/components/header';
+// import Footer from '@/components/footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -46,9 +46,10 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <Header />
+          {/* De momento quitamos Header  y Footer */}
+          {/* <Header /> */}
           <main className="grow">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>
